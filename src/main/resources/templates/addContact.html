@@ -7,8 +7,11 @@
 		<h1>Add contact</h1>
 		<form action="#" th:action="@{/add}" th:object="${contact}" method="post">
 			<p>Name: <input type="text" th:field="*{name}" /></p>
+			<p th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name error</p>
 			<p>Number: <input type="text" th:field="*{number}" /></p>
+			<p th:if="${#fields.hasErrors('number')}" th:errors="*{number}">Number error</p>
 			<p>Address: <input type="text" th:field="*{address}" /></p>
+			<p th:if="${#fields.hasErrors('address')}" th:errors="*{address}">Address error</p>
 			<input type="submit" value="Submit" />
 		</form>
 	</body>
