@@ -14,5 +14,9 @@
 			<p th:if="${#fields.hasErrors('address')}" th:errors="*{address}">Address error</p>
 			<input type="submit" value="Submit" />
 		</form>
+		<br/>
+		<form th:action="@{/logout}" method="post">
+			<input type="submit" value="Sign out"/>
+		</form>
 	</body>
 </html>
