@@ -1,4 +1,4 @@
-package com.nikito.contacter;
+package com.nikito.contacter.controllers;
 
 import javax.validation.Valid;
 
@@ -9,6 +9,9 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+
+import com.nikito.contacter.models.Contact;
+import com.nikito.contacter.repositories.ContactRepository;
 
 @Controller
 public class ContactController {

@@ -1,4 +1,4 @@
-package com.nikito.contacter;
+package com.nikito.contacter.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
